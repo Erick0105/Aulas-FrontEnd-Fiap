@@ -12,5 +12,6 @@
 ## Erick Alves
 
 ```
-Sou da turma 1TDSPM e projetos como atividades pedidas em sala estarão todas aqui, com exceção de Cp's, challenges e Global Solutions que irão estar em um repositorio expecifico.
+Sou da turma 1TDSPM e projetos como atividades pedidas em sala estarão todas aqui, com exceção de Cp's, challenges
+e Global Solutions que irão estar em um repositorio expecifico.
 ```
