@@ -11,9 +11,9 @@
 ## Erick Alves
 
 ```
-Aqui tem uma separação de arquivos por diretorios. 1TDSPM e House.
+Here I separated files by directories. 1TDSPM and myself.
 ```
 
-> Em **1TDSPM** estão arquivos que são referentes a projetos feitos durante o curso de ADS na FIAP.
+> In **1TDSPM** there are files that refer to projects carried out during the ADS course at FIAP.
 
-> Em **House** estão arquivos que produzi por conta própria.
+> In **myself** there are files that were produced by myself.
