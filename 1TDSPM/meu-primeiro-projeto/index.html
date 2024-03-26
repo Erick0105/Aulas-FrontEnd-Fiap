@@ -13,33 +13,28 @@
     <!-- Esse 1º seletor será utilizado para todas as tags escolhidas -->
     <!-- Esse 2º seletor será utilizado para a classe escolhida -->
     <!-- Esse 3º seletor será utilizado para a id escolhida -->
-    <style>
-      h1{text-align: center; border: solid 2px rgb(255, 0, 0)}
-      .titulo{text-align: center; border: solid 2px rgb(4, 0, 255)} 
-      #Back{text-align: center; border: solid 2px rgb(255, 0, 179)}
-    </style>
   </head>
   <body>
-    <div class="container">
-      <header class="cabecalho">
-        <h1 style="border: solid 2px rgb(rgb(2, 59, 124),);">
+    <div id="container">
+      <header id="cabecalho">
+        <h1>
           Minha Página
         </h1>
 
-        <nav class="menu">
+        <nav id="menu">
           <!-- ul = unordered list e só pode conter dentro diretamente dentro de si  li (list item) ou outros uls-->
           <ul>
-            <li><a href="./paginas/help.html"> Help </a></li>
-            <li><a href="./paginas/about.html"> About </a></li>
-            <li><a href="#About"> Contact </a></li>
+            <li class="link"><a href="./paginas/help.html"> Help </a></li>
+            <li class="link"><a href="./paginas/about.html"> About </a></li>
+            <li class="link"><a href="#About"> Contact </a></li>
           </ul>
         </nav>
       </header>
 
-      <section class="conteudo">
+      <section id="conteudo">
         <div>
-          <h1 class="titulo">Next</h1>
-          <h1 id="Back">Olá</h1>
+          <h1>Next</h1>
+          <h1>Olá</h1>
           <h2>HELP</h2>
           <p>
             Help - Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -82,7 +77,7 @@
             illum perspiciatis odio saepe porro unde nostrum facilis, dicta
             deleniti incidunt officiis dolore ullam error ea repellat explicabo
           </p>
-          <a href="./paginas/help.html">Mais...</a>
+          <a class="link" href="./paginas/help.html">Mais...</a>
         </div>
         <div>
           <h2>About</h2>
@@ -91,7 +86,7 @@
             Nisi fugiat delectus repellat soluta vel nemo quidem sint rem
             temporibus quos?
           </p>
-          <a href="./paginas/about.html">Mais...</a>
+          <a class="link" href="./paginas/about.html">Mais...</a>
         </div>
         <div id="contact">
           <h2>CONTACT</h2>
@@ -124,13 +119,13 @@
         </div>
       </section>
 
-      <footer class="rodape">
+      <footer id="rodape">
         <!-- nav.menu>ul>li*3>a[href="#"]{Item - $} -->
-        <nav class="menu">
+        <nav id="menu">
           <ul>
-            <li><a href="https://www.fiap.com.br" target="_blank">FIAP</a></li>
-            <li><a href="#">GOOGLE</a></li>
-            <li><a href="#">Github</a></li>
+            <li class="link"><a href="https://www.fiap.com.br" target="_blank">FIAP</a></li>
+            <li class="link"><a href="#">GOOGLE</a></li>
+            <li class="link"><a href="#">Github</a></li>
           </ul>
         </nav>
       </footer>
