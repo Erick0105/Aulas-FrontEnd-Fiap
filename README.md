@@ -1,4 +1,4 @@
-# Projetos Front End
+# Projectos de Front End do curso ADS
 
 <div>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="30" alt="html5 logo"  />
@@ -11,10 +11,7 @@
 
 ## Erick Alves
 
-```
-Here I separated files by directories. 1TDSPM and myself.
-```
-
-> In **1TDSPM** there are files that refer to projects carried out during the ADS course at FIAP.
-
-> In **myself** there are files that were produced by myself.
+````
+Sou da turma 1TDSPM e projetos como atividades pedidas em sala estarão todas aqui, com exceção de Cp's, challenges
+e Global Solutions que irão estar em um repositorio expecifico.
+````
