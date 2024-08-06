@@ -10,17 +10,23 @@
 <body>
     <aside id="dados">
         <div class="subTitulo">
-            <h3>Opções</h3>
+            <h3>Menu de Configuração</h3>
         </div>
         <div class="conteudo">
-            <form>
+            <form id="formAdd">
                 <label for="">Coloque os dados de alguém aleatório</label>
                 <input type="text" name="txtNome" placeholder="Insira o nome aqui" id="idNome" required="required">
                 <input type="number" name="numIdade" placeholder="Insira a idade" id="idIdade" required="required">
                 <label for="" id="aviso"></label>
+                <button type="button" id="addDados">Adicionar na lista</button>
+            </form>
+            <form id="formPesq">
+                <input type="text" name="txtPesquisa" placeholder="Insira o alvo da pesquisa" id="idPesquisa" required>
+                <button type="button" id="pesquisar">Pesquisar</button>
+                <button type="button" id="addDados">Remover</button>
             </form>
             
-            <button type="button" id="addDados">Adicionar na lista</button>
+            
             <button id="ordenarNome">Ordernar nomes</button>
             <button id="ordenarIdade">Ordernar idades</button>
             <button id="reverse">Reverter ordem</button>
