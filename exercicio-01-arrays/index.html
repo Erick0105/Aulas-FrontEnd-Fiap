@@ -4,18 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Erick Alves</title>
+    <script src="./js/script.js" defer></script>
 </head>
 <body>
-    <form action="#" onsubmit="">
-        <label >Dados de alguém</label>
-        <input type="text" name="txtNome" placeholder="Insira o nome aqui" id="idNome" required="required">
-        <input type="number" name="numIdade" placeholder="Insira a idade" id="idIdade" required="required">
-        <button type="submmit" id="addDados">Adicionar na lista</button></form>
-
-        <button id="ordenarNome">Ordernar por nome</button>
-        <button id="ordenarIdade">Ordernar por idade</button>
+    <aside>
+        <form>
+            <label for="">Dados de alguém aleatório</label>
+            <input type="text" name="txtNome" placeholder="Insira o nome aqui" id="idNome" required="required">
+            <input type="number" name="numIdade" placeholder="Insira a idade" id="idIdade" required="required">
+            <label for="" id="aviso"></label>
+            <button type="button" id="addDados">Adicionar na lista</button>
+        </form>
+    
+        <button id="ordenarNome">Ordernar nomes</button>
+        <button id="ordenarIdade">Ordernar idades</button>
         <button id="reverse">Reverter ordem</button>
-        
-        <ul id="listaDados"></ul>
+        <button id="mostrar">Mostrar tabelas</button>
+    </aside>
+    
+    <aside>
+        <ul id="listaNomes"></ul>
+        <ul id="listaIdades"></ul>
+    </aside>
 </body>
 </html>
