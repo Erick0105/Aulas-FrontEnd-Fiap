@@ -42,9 +42,9 @@ document.getElementById("addDados").addEventListener("click", ()=>{
     novaIdade = document.getElementById("idIdade").value;
 
     if (novoNome === "" || novaIdade === ""){
-        document.getElementById("aviso").textContent = "Preencha os dois campos"
+        document.getElementById("aviso").textContent = "Preencha os dois campos";
     }else{
-        document.getElementById("aviso").textContent = ""
+        document.getElementById("aviso").textContent = "";
         addDados(novoNome,novaIdade);
     }
 });
@@ -82,7 +82,6 @@ function pesquisar(alvo){
     
     resultado = listaDados.find(procurado => procurado.nome === alvo);
 
-    
     if (resultado !== undefined){
         document.getElementById("aviso").textContent = "Usuário encontrado";
     }else{
@@ -91,12 +90,38 @@ function pesquisar(alvo){
 }
 
 document.getElementById("pesquisar").addEventListener("click", ()=>{
-    pessoasPesquisada = document.getElementById("idPesquisa").value
+    pessoasPesquisada = document.getElementById("idPesquisa").value;
     
     if (pessoasPesquisada === ""){
-        document.getElementById("aviso").textContent = "Preencha o campo de pesquisa"
+        document.getElementById("aviso").textContent = "Preencha o campo de pesquisa";
     }else{
         document.getElementById("aviso").textContent = ""
-        pesquisar(pessoasPesquisada)
+        pesquisar(pessoasPesquisada);
+    }
+});
+
+
+
+//* Função para remover o nome desejado
+function remover(alvo){
+    indiceNome = listaDados.findIndex(procurado => procurado.nome === alvo)
+
+    if (indiceNome !== -1){
+        listaDados.splice(indiceNome,1);
+        document.getElementById("aviso").textContent = "Usuário Removido";
+    }else{
+        document.getElementById("aviso").textContent = "Usuário Inexistente";
+    }
+    mostrarDados();
+}
+
+document.getElementById("remover").addEventListener("click",()=>{
+    pessoasPesquisada = document.getElementById("idPesquisa").value;
+    
+    if (pessoasPesquisada === ""){
+        document.getElementById("aviso").textContent = "Preencha o campo de pesquisa";
+    }else{
+        document.getElementById("aviso").textContent = "";
+        remover(pessoasPesquisada);
     }
 });
