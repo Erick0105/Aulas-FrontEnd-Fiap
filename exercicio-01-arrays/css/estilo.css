@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.75vw;
+    background-color: rgb(39, 53, 179);
+
+    #listas{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        .subTitulo{
+            padding-left: 2vw;
+            padding-right: 2vw;
+            padding-bottom: 0.2vh;
+            color: rgba(255, 255, 255, 0.562);
+            font-size: 5vw;
+            background-color: rgba(255, 186, 58, 0.418);
+            border-bottom: 0.25vw solid rgb(255, 166, 0);
+        }
+        .conteudo{
+            display: flex;
+            justify-content: space-around;
+            font-size: 1.6vw;
+            padding-top: 3vh;
+            padding-bottom: 3vh;
+            li{
+                list-style-type: none;
+            }
+        }
+        
+        #btn{
+            padding-top: 2vh;
+            display: flex;
+            justify-content: center;
+            button{
+                font-size: 2vw;
+                border-radius: 0.5vw;
+            }
+        }
+    }
+    #dados{
+        background-color: rgb(247, 246, 255);
+        border-radius: 31% 25% 39% 15% / 0% 52% 48% 57%;
+
+    }
+}

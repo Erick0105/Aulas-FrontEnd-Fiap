@@ -5,26 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Erick Alves</title>
     <script src="./js/script.js" defer></script>
+    <link rel="stylesheet" href="./css/estilo.css">
 </head>
 <body>
-    <aside>
-        <form>
-            <label for="">Dados de alguém aleatório</label>
-            <input type="text" name="txtNome" placeholder="Insira o nome aqui" id="idNome" required="required">
-            <input type="number" name="numIdade" placeholder="Insira a idade" id="idIdade" required="required">
-            <label for="" id="aviso"></label>
+    <aside id="dados">
+        <div class="subTitulo">
+            <h3>Opções</h3>
+        </div>
+        <div class="conteudo">
+            <form>
+                <label for="">Coloque os dados de alguém aleatório</label>
+                <input type="text" name="txtNome" placeholder="Insira o nome aqui" id="idNome" required="required">
+                <input type="number" name="numIdade" placeholder="Insira a idade" id="idIdade" required="required">
+                <label for="" id="aviso"></label>
+            </form>
+            
             <button type="button" id="addDados">Adicionar na lista</button>
-        </form>
-    
-        <button id="ordenarNome">Ordernar nomes</button>
-        <button id="ordenarIdade">Ordernar idades</button>
-        <button id="reverse">Reverter ordem</button>
-        <button id="mostrar">Mostrar tabelas</button>
+            <button id="ordenarNome">Ordernar nomes</button>
+            <button id="ordenarIdade">Ordernar idades</button>
+            <button id="reverse">Reverter ordem</button>
+        </div>
     </aside>
     
-    <aside>
-        <ul id="listaNomes"></ul>
-        <ul id="listaIdades"></ul>
+    <aside id="listas">
+        <div>
+            <div class="subTitulo">
+                <h3>Listas</h3>
+            </div>
+            <div class="conteudo">
+                <ul id="listaNomes"></ul>
+                <ul id="listaIdades"></ul>
+            </div>
+            <div id="btn">
+                <button id="mostrar">Mostrar listas</button>
+            </div>
+        </div>
     </aside>
 </body>
 </html>
