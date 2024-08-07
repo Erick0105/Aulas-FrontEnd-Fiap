@@ -70,7 +70,7 @@ document.getElementById("ordenarIdade").addEventListener("click", ()=>{
 
 //* Parte que organiza as listas por nome
 document.getElementById("ordenarNome").addEventListener("click", ()=>{
-    listaDados.sort((a, b) => a.nome.localeCompare(b.nome)); //! Perguntar uma explicação melhor sobre
+    listaDados.sort((a, b) => a.nome.localeCompare(b.nome));
     console.log(listaDados);
     mostrarDados();
 });
