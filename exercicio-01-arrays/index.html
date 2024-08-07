@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erick Alves</title>
+    <script src="./js/script.js" defer></script>
+    <link rel="stylesheet" href="./css/estilo.css">
+</head>
+<body>
+    <aside id="dados">
+        <div class="subTitulo" id="subDados">
+            <h3>Menu de Configuração</h3>
+        </div>
+        <div class="conteudo" id="contDados">
+            <form id="formAdd">
+                <label for="">Coloque os dados de alguém</label>
+                <div id="inputs">
+                    <input type="text" name="txtNome" placeholder="Insira o nome aqui" id="idNome" required="required">
+                    <input type="number" name="numIdade" placeholder="Insira a idade" id="idIdade" required="required">
+                </div>
+                <button type="button" id="addDados">Adicionar na lista</button>
+            </form>
+            <form id="avisoForm">
+                <label for="" id="aviso"></label>
+            </form>
+            <form id="formPesq">
+                <input type="text" name="txtPesquisa" placeholder="Insira o alvo da pesquisa" id="idPesquisa" required>
+                <div id="divPesq">
+                    <button type="button" id="pesquisar">Pesquisar</button>
+                    <button type="button" id="remover">Remover</button>
+                </div>
+            </form>
+            
+            <div id="opcoes">
+
+                <h4>Opções</h4>
+                <div id="btnsOpcoes">
+                    
+                    <button id="ordenarNome">Ordernar nomes</button>
+                    <button id="ordenarIdade">Ordernar idades</button>
+                    <button id="reverse">Reverter ordem</button>
+                </div>
+            </div>
+        </div>
+    </aside>
+    
+    <aside id="listas">
+        <div>
+            <div class="subTitulo" id="subListas">
+                <h3>Listas</h3>
+            </div>
+            <div class="conteudo" id="contListas">
+                <ul id="listaNomes"></ul>
+                <ul id="listaIdades"></ul>
+            </div>
+            <div id="btn">
+                <button id="mostrar">Mostrar listas</button>
+            </div>
+        </div>
+    </aside>
+</body>
+</html>
