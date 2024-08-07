@@ -9,45 +9,126 @@ body{
     grid-template-columns: 1fr 1fr;
     gap: 1.75vw;
     background-color: rgb(39, 53, 179);
-
-    #listas{
+    
+    aside{
         display: flex;
         align-items: center;
         flex-direction: column;
         justify-content: center;
+
         .subTitulo{
+            font-size: 5vw;
             padding-left: 2vw;
             padding-right: 2vw;
             padding-bottom: 0.2vh;
-            color: rgba(255, 255, 255, 0.562);
-            font-size: 5vw;
+            color: rgba(0, 0, 0, 0.562);
             background-color: rgba(255, 186, 58, 0.418);
             border-bottom: 0.25vw solid rgb(255, 166, 0);
         }
-        .conteudo{
-            display: flex;
-            justify-content: space-around;
-            font-size: 1.6vw;
-            padding-top: 3vh;
-            padding-bottom: 3vh;
-            li{
-                list-style-type: none;
-            }
-        }
-        
-        #btn{
-            padding-top: 2vh;
-            display: flex;
-            justify-content: center;
-            button{
-                font-size: 2vw;
-                border-radius: 0.5vw;
-            }
-        }
+
     }
+
+    .conteudo{
+        display: flex;
+        justify-content: space-around;
+        font-size: 1.6vw;
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+
+        li{
+            list-style-type: none;
+        }
+
+    }
+
+    button{
+        font-size: 1.2vw;
+        border-radius: 0.3vw;
+    }
+        
+    #btn{
+        padding-top: 2vh;
+        display: flex;
+        justify-content: center;
+
+        button{
+            font-size: 2vw;
+            border-radius: 0.3vw;
+
+        }
+
+    }
+    
     #dados{
-        background-color: rgb(247, 246, 255);
+        background-color: rgba(247, 246, 255, 0.808);
         border-radius: 31% 25% 39% 15% / 0% 52% 48% 57%;
 
+        #subDados{
+            font-size: 3.5vw;
+            color: rgb(255, 166, 0);
+            background-color: rgba(61, 61, 61, 0.514);
+            border-bottom: 0.25vw solid rgb(0, 0, 0);
+
+        }
+
+        input{
+            width: 10vw;
+            margin-bottom: 1vh;
+
+        }
+
+        #contDados{        
+            flex-direction: column;
+            
+
+            #formAdd{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                padding-bottom: 1vh;
+
+            }
+
+            label{
+                display: flex;
+                justify-content: center;
+                font-size: 2vw;
+
+            }
+
+            #avisoForm{
+                border-top: 0.15vw solid rgb(0, 0, 0);
+                border-bottom: 0.15vw solid rgb(0, 0, 0);
+                
+            }
+
+            #formPesq{
+                padding-top: 1vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                input{
+                    width: 12.5vw;
+                }
+                #divPesq{
+                    display: flex;
+                    justify-content: space-around;
+                    button{
+                        width: 7vw;
+                        margin-right: 1vw;
+                        margin-left: 1vw;
+                        margin-bottom: 2vh;
+                    }
+                }
+            }
+
+            #opcoes{
+                border-top: 0.2vw solid rgb(0, 0, 0);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
     }
 }

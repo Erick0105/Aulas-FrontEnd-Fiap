@@ -9,36 +9,48 @@
 </head>
 <body>
     <aside id="dados">
-        <div class="subTitulo">
+        <div class="subTitulo" id="subDados">
             <h3>Menu de Configuração</h3>
         </div>
-        <div class="conteudo">
+        <div class="conteudo" id="contDados">
             <form id="formAdd">
-                <label for="">Coloque os dados de alguém aleatório</label>
-                <input type="text" name="txtNome" placeholder="Insira o nome aqui" id="idNome" required="required">
-                <input type="number" name="numIdade" placeholder="Insira a idade" id="idIdade" required="required">
-                <label for="" id="aviso"></label>
+                <label for="">Coloque os dados de alguém</label>
+                <div id="inputs">
+                    <input type="text" name="txtNome" placeholder="Insira o nome aqui" id="idNome" required="required">
+                    <input type="number" name="numIdade" placeholder="Insira a idade" id="idIdade" required="required">
+                </div>
                 <button type="button" id="addDados">Adicionar na lista</button>
+            </form>
+            <form id="avisoForm">
+                <label for="" id="aviso"></label>
             </form>
             <form id="formPesq">
                 <input type="text" name="txtPesquisa" placeholder="Insira o alvo da pesquisa" id="idPesquisa" required>
-                <button type="button" id="pesquisar">Pesquisar</button>
-                <button type="button" id="remover">Remover</button>
+                <div id="divPesq">
+                    <button type="button" id="pesquisar">Pesquisar</button>
+                    <button type="button" id="remover">Remover</button>
+                </div>
             </form>
             
-            
-            <button id="ordenarNome">Ordernar nomes</button>
-            <button id="ordenarIdade">Ordernar idades</button>
-            <button id="reverse">Reverter ordem</button>
+            <div id="opcoes">
+
+                <h4>Opções</h4>
+                <div id="btnsOpcoes">
+                    
+                    <button id="ordenarNome">Ordernar nomes</button>
+                    <button id="ordenarIdade">Ordernar idades</button>
+                    <button id="reverse">Reverter ordem</button>
+                </div>
+            </div>
         </div>
     </aside>
     
     <aside id="listas">
         <div>
-            <div class="subTitulo">
+            <div class="subTitulo" id="subListas">
                 <h3>Listas</h3>
             </div>
-            <div class="conteudo">
+            <div class="conteudo" id="contListas">
                 <ul id="listaNomes"></ul>
                 <ul id="listaIdades"></ul>
             </div>
