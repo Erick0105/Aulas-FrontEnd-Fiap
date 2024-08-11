@@ -13,5 +13,3 @@ const filtrarSalarios = salariosAtualizados.filter((salariozinho)=> salariozinho
 
 //* Somando esses valores para um só usando Reduce
 const salarioSomados = filtrarSalarios.reduce((imposto,salarioAtual)=> imposto + salarioAtual);
-
-console.log(salarioSomados)
