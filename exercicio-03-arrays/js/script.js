@@ -28,13 +28,27 @@ arrayId = [
 //* Função para aumentar o sálario correspondente
 const salariosAtualizados = arraySalarios.map((salarioFunc) =>{
     let salarioAtualizado = salarioFunc.salario <= 2000 ? salarioFunc.salario + (salarioFunc.salario*0.15):salarioFunc.salario + (salarioFunc.salario*0.1);
-    salarioFunc.salario = salarioAtualizado
+    salarioFunc.salario = salarioAtualizado;
 
-    let nomeFunc = arrayId.find(idFunc => idFunc.id === salarioFunc.id)
+    let nomeFunc = arrayId.find(idFunc => idFunc.id === salarioFunc.id);
 
-    return {...salarioFunc, nome:nomeFunc.nome}
+    return {...salarioFunc, nome:nomeFunc.nome};
 });
 
+function mostrarDados(){
+    let elLista = document.getElementById("lista");
+    elLista.innerHTML = "";
+
+    salariosAtualizados.forEach(funcionario => {
+        funcDoc = document.createElement("li");
+        funcDoc.textContent = funcionario.nome + funcionario.id + funcionario.salario;
+        elLista.appendChild(funcDoc);
+    });
+}
+
+console.log(salariosAtualizados);
+
+document.getElementById("mostrar").addEventListener("click", mostrarDados);
 
 //* Filtrando os salarios maiores que 2500
 
