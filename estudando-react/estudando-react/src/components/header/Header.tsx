@@ -1,4 +1,4 @@
-export default function Header(props:{titulo:string}){
+export default function Header(props:{titulo:string,aviso:Function}){
     document.title = props.titulo;
 
 
@@ -6,6 +6,7 @@ export default function Header(props:{titulo:string}){
         
         <header>
             <h3>{props.titulo}</h3>
+            <button onClick={()=> props.aviso()}>Avisozinho</button>
         </header>
     );
 }
