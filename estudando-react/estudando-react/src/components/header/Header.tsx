@@ -7,10 +7,11 @@ type CabecalhoProps ={
 
 type CabecalhoProps2 ={
     numPagina: number | string;
-    status: "loading" | "deployed"
+    status: "loading" | "deployed";
+    children: React.ReactNode;
 }
 
-export default function Header({pagina,aviso,numPagina,status}:CabecalhoProps & CabecalhoProps2){
+export default function Header({pagina,aviso,numPagina,status,children}:CabecalhoProps & CabecalhoProps2){
     document.title = pagina;
 
     if(typeof numPagina === "number"){
@@ -26,6 +27,7 @@ export default function Header({pagina,aviso,numPagina,status}:CabecalhoProps & 
         
         <header>
             <h1>{pagina + "\n" + numPagina}</h1>
+            {children}
             <button onClick={()=> aviso()}>Avisozinho</button>
         </header>
     );
