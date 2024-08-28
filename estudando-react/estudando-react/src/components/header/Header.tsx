@@ -1,4 +1,9 @@
-export default function Header({titulo,aviso}:{titulo:string,aviso:Function}){
+type CabecalhoProps ={
+    titulo:string;
+    aviso:Function;
+}
+
+export default function Header({titulo,aviso}:CabecalhoProps){
     document.title = titulo;
 
 
